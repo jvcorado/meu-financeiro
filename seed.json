@@ -1,0 +1,182 @@
+{
+  "version": 1,
+  "revision": 0,
+  "profile": {
+    "firstName": "Marina",
+    "lastName": "Demo"
+  },
+  "preferences": {
+    "theme": "dark",
+    "collapsed": [],
+    "period": "current",
+    "forecastDivisor": 30
+  },
+  "movements": [
+    {
+      "id": "demo-salary",
+      "type": "income",
+      "amount": 500000,
+      "description": "Salário",
+      "date": "@month:05",
+      "tagIds": [
+        "tag-income"
+      ],
+      "cardId": null,
+      "repeat": "monthly",
+      "count": null,
+      "exceptions": {}
+    },
+    {
+      "id": "demo-rent",
+      "type": "expense",
+      "amount": 120000,
+      "description": "Aluguel",
+      "date": "@month:10",
+      "tagIds": [
+        "tag-home"
+      ],
+      "cardId": null,
+      "repeat": "monthly",
+      "count": null,
+      "exceptions": {}
+    },
+    {
+      "id": "demo-internet",
+      "type": "expense",
+      "amount": 12000,
+      "description": "Internet",
+      "date": "@month:20",
+      "tagIds": [
+        "tag-home"
+      ],
+      "cardId": null,
+      "repeat": "monthly",
+      "count": null,
+      "exceptions": {}
+    },
+    {
+      "id": "demo-card",
+      "type": "card",
+      "amount": 65000,
+      "description": "Compras no cartão",
+      "date": "@month:10",
+      "tagIds": [],
+      "cardId": "card-main",
+      "repeat": "monthly",
+      "count": null,
+      "exceptions": {}
+    },
+    {
+      "id": "demo-saving",
+      "type": "saving",
+      "amount": 50000,
+      "description": "Reserva para objetivos",
+      "date": "@month:05",
+      "tagIds": [
+        "tag-plans"
+      ],
+      "cardId": null,
+      "repeat": "monthly",
+      "count": null,
+      "exceptions": {}
+    },
+    {
+      "id": "demo-reimbursement",
+      "type": "income",
+      "amount": 8500,
+      "description": "Reembolso de compra compartilhada",
+      "date": "@month:08",
+      "tagIds": [
+        "tag-ignore"
+      ],
+      "cardId": null,
+      "repeat": "none",
+      "count": null,
+      "exceptions": {}
+    }
+  ],
+  "tags": [
+    {
+      "id": "tag-home",
+      "name": "Moradia",
+      "color": "blue",
+      "rules": {
+        "balance": true,
+        "performance": true,
+        "saved": true,
+        "cost": true,
+        "average": true
+      }
+    },
+    {
+      "id": "tag-food",
+      "name": "Alimentação",
+      "color": "pink",
+      "rules": {
+        "balance": true,
+        "performance": true,
+        "saved": true,
+        "cost": true,
+        "average": true
+      }
+    },
+    {
+      "id": "tag-income",
+      "name": "Trabalho",
+      "color": "green",
+      "rules": {
+        "balance": true,
+        "performance": true,
+        "saved": true,
+        "cost": true,
+        "average": true
+      }
+    },
+    {
+      "id": "tag-plans",
+      "name": "Objetivos",
+      "color": "purple",
+      "rules": {
+        "balance": true,
+        "performance": true,
+        "saved": true,
+        "cost": true,
+        "average": true
+      }
+    },
+    {
+      "id": "tag-ignore",
+      "name": "Reembolso",
+      "color": "gray",
+      "rules": {
+        "balance": false,
+        "performance": false,
+        "saved": false,
+        "cost": false,
+        "average": false
+      }
+    }
+  ],
+  "cards": [
+    {
+      "id": "card-main",
+      "name": "Cartão principal",
+      "closingDay": 2,
+      "dueDay": 10
+    }
+  ],
+  "forecastItems": [
+    {
+      "id": "forecast-food",
+      "description": "Alimentação",
+      "amount": 120000
+    },
+    {
+      "id": "forecast-transport",
+      "description": "Transporte",
+      "amount": 30000
+    }
+  ],
+  "checkins": [],
+  "suggestions": []
+}

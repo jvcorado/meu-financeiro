@@ -1,0 +1,4 @@
+# Substitua pelo mesmo domínio informado em --public-origin.
+financeiro.example.com {
+    reverse_proxy 127.0.0.1:4173
+}

@@ -1,0 +1,24 @@
+# Dados privados e cópias de segurança
+data/
+backups/
+*.sqlite
+*.sqlite-*
+*.db
+*.db-*
+
+# Credenciais e configuração local
+.env
+.env.*
+*.env
+*.pem
+*.key
+!*.env.example
+
+# Arquivos gerados e capturas locais
+__pycache__/
+*.pyc
+test-results/
+preview/
+node_modules/
+.DS_Store
+*.log

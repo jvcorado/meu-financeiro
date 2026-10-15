@@ -1,0 +1,13 @@
+{
+  "name": "meu-financeiro-local",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test domain.test.mjs sync.test.mjs app-sync.test.mjs",
+    "start": "python3 server.py"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}

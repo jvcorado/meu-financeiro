@@ -1,0 +1,21 @@
+[Unit]
+Description=Meu financeiro
+After=network.target
+
+[Service]
+Type=simple
+User=financeiro
+Group=financeiro
+WorkingDirectory=/opt/meu-financeiro
+EnvironmentFile=-/etc/meu-financeiro.env
+ExecStart=/usr/bin/python3 -B /opt/meu-financeiro/server.py --port 4173 --db /var/lib/meu-financeiro/app.sqlite --public-origin https://financeiro.example.com
+Restart=on-failure
+UMask=0077
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/lib/meu-financeiro
+
+[Install]
+WantedBy=multi-user.target
